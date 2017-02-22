@@ -5,14 +5,26 @@ body {
     font-family: arial, sans-serif;
 }
 
+
+/*.container {
+  margin: auto;
+  width: 550px;
+}*/
+
 #main, #chats {
-    width: 500px;
+/*#main {*/
+    width: 550px;
     margin: auto;
     text-align: left;
     background: white;
     padding: 50px 60px;
     border: solid #ddd;
     border-width: 0 1px 1px 1px;
+}
+
+#chats {
+  padding: 0;
+
 }
 
 #main h1 {
@@ -88,3 +100,49 @@ form input[type=text] {
     background-color: #0090da;
 }
 
+
+/**/
+.container {
+  margin: auto;
+  width: 550px;
+}
+
+.twt {
+  padding: 20px;
+  border: 1px solid #e1e8ed;
+  cursor: pointer;
+
+}
+.twt:hover {
+  background-color: #f5f8fa;
+}
+
+.twt__header {
+  font-size-adjust: 100%;
+  font-size: 13px;
+  color: #8899a6;
+}
+.twt__user {
+}
+
+.twt__fullname {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.twt__timestamp:before {
+    content: "\00b7 ";
+}
+
+.twt__messsage {
+  text-align: center;
+}
+
+.twt__timeline {
+  margin-top: 40px;
+  padding: 10px;
+  border: 1px solid #e1e8ed;
+  cursor: pointer;
+
+}

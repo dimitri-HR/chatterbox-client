@@ -28,32 +28,43 @@
 
   </head>
   <body>
-    <div id="main">
-      <h1>chatterbox</h1>
+    <div class="container">
+      <div id="main" class="container">
+        <h1>chatterbox</h1>
 
-        <p>Room:
-          <select name="rooms" id="roomSelect">
+        <!-- <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Dropdown
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div> -->
 
-            <!-- <option value="Room 1">Room 1</option>
-            <option value="Room 2">Room 2</option>
-           <option value="Room 3">Room 3</option> -->
-          </select>
-          <input id="textAddRoom" type="text">
-          <button id="btnAddRoom">Add Room</button>
-        </p>
+
+        <div>
+          <!-- Select Room -->
+          <select class="form-control form-group-sm" name="rooms" id="roomSelect"></select>
+          <!-- end Select Room -->
+          <button id="btnAddRoom" type="button" class="btn btn-primary btn-sm">Add Room</button>
+          <button id="refresh" type="button" class="btn btn-primary btn-sm">Refresh page</button>
+        </div>
         <input id="addMessage" type="text">
-        <button id="submit">Submit</button>
-        <button id="refresh">refresh page</button>
-        <button id="clearMessages">Clear Messages</button>
+        <button id="newMessage" type="button" class="btn btn-primary btn-sm">New Message</button>
+        <button id="clearMessages" class="btn btn-danger btn-sm">Clear Messages</button>
 
 
+      </div>
     </div>
 
     <div id="chats">
-      <!-- <ul id="messages"></ul> -->
+
     </div>
-
-
   <script src="scripts/app.js"></script>
   </body>
 </html>
